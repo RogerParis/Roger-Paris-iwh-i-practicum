@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        title= title
+    body
+        h1 Drones List
+        a(href="/update-cobj") Add to this table
+        table
+            tr
+                th Name
+                th Brand
+                th Weight
+            each drone in drones
+                tr
+                    td= drone.properties.name
+                    td= drone.properties.brand
+                    td= drone.properties.weight
